@@ -21,4 +21,12 @@ function mudaCor() {
     }
 }
 
+function desabilitaBotao() {
+    if (numeroAtual <= -15) {
+        document.getElementById("btnMenos").disabled = true;
+    } else if (numeroAtual >= 20) {
+        document.getElementById("btnMais").disabled = true;
+    }
+}
+
 
