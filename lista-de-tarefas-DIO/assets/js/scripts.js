@@ -29,8 +29,29 @@ function adicionarTarefas() {
     }
 
     // Se o input for válido execute o código abaixo:
+
+    // Criando o elemento div abaixo:
+    const containerTarefas = document.createElement('div')
+    // Dando uma classe para a div criada acima:
+    containerTarefas.classList.add('item-tarefa')
+
+    // Criando abaixo o parágrafo que irá dentro da div:
+    const textoItemTarefa = document.createElement('p')
+
+
+
+
+
+    textoItemTarefa.innerText = inputElement.value;
 }
 
-botaoAdicionar.addEventListener("click", adicionarTarefas());
 
-caixaDeTexto.addEventListener("change", mudancaDoInput());
+
+
+
+
+
+
+botaoAdicionar.addEventListener("click", () => adicionarTarefas());
+
+caixaDeTexto.addEventListener("change",  () => mudancaDoInput());
