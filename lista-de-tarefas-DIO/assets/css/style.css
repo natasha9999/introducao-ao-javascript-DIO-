@@ -76,3 +76,11 @@ h1 {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     margin-top: 50px;
 }
+
+.error {
+    border: 2px solid #ff0000 !important;
+}
+
+.error::placeholder {
+    color: #ff0000;
+}
